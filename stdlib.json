@@ -1,0 +1,29 @@
+{
+  "name": "tianbao/ananas-bot",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/discord/bot_mention.js": {
+      "name": "discord.bot_mention"
+    },
+    "functions/events/autocode/self/deployed.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/events/discord/guild/member/add.js": {
+      "name": "discord.guild.member.add"
+    },
+    "functions/events/discord/message/create.js": {
+      "name": "discord.message.create"
+    }
+  },
+  "env": [
+    {
+      "name": "WELCOME_CHANNEL_ID",
+      "description": "The channel ID to send message to for new users."
+    },
+    {
+      "name": "BOT_OWNER_ID",
+      "description": "The ID of the bot's Owner ID (the ID of the bots creator)"
+    }
+  ]
+}

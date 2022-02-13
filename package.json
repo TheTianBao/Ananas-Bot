@@ -1,0 +1,8 @@
+{
+  "name": "new-project",
+  "author": "TianBao",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest"
+  }
+}
